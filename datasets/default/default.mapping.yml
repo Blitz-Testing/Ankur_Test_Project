@@ -1,0 +1,112 @@
+# Editing this file is usually not recommended because it will
+# be overwritten the next time you re-capture this data.
+#
+# You can change this file's contents permanently by creating a
+# .load.yml file and re-capturing:
+#
+#  https://cumulusci.readthedocs.io/en/stable/data.html#extracting-and-loading-sample-datasets
+Insert Folder:
+  sf_object: Folder
+  table: Folder
+  fields:
+  - Name
+  - DeveloperName
+  - AccessType
+  - IsReadonly
+  - Type
+  lookups:
+    ParentId:
+      table:
+      - Folder
+      key_field: ParentId
+      after: Insert Folder
+Insert DandBCompany:
+  sf_object: DandBCompany
+  table: DandBCompany
+  fields:
+  - DunsNumber
+  - Name
+Insert OperatingHours:
+  sf_object: OperatingHours
+  table: OperatingHours
+  fields:
+  - Name
+  - TimeZone
+Insert Document:
+  sf_object: Document
+  table: Document
+  fields:
+  - Name
+  - DeveloperName
+  - ContentType
+  - Type
+  - IsPublic
+  - Body
+  - Url
+  - Description
+  - Keywords
+  - IsInternalUseOnly
+  lookups:
+    FolderId:
+      table:
+      - Folder
+      key_field: FolderId
+Insert Account:
+  sf_object: Account
+  table: Account
+  fields:
+  - Name
+  - Type
+  - BillingStreet
+  - BillingCity
+  - BillingState
+  - BillingPostalCode
+  - BillingCountry
+  - BillingLatitude
+  - BillingLongitude
+  - BillingGeocodeAccuracy
+  - ShippingStreet
+  - ShippingCity
+  - ShippingState
+  - ShippingPostalCode
+  - ShippingCountry
+  - ShippingLatitude
+  - ShippingLongitude
+  - ShippingGeocodeAccuracy
+  - Phone
+  - Fax
+  - AccountNumber
+  - Website
+  - Sic
+  - Industry
+  - AnnualRevenue
+  - NumberOfEmployees
+  - Ownership
+  - TickerSymbol
+  - Description
+  - Rating
+  - Site
+  - Jigsaw
+  - CleanStatus
+  - AccountSource
+  - DunsNumber
+  - Tradestyle
+  - NaicsCode
+  - NaicsDesc
+  - YearStarted
+  - SicDesc
+  - test__c
+  lookups:
+    ParentId:
+      table:
+      - Account
+      key_field: ParentId
+      after: Insert Account
+    DandbCompanyId:
+      table:
+      - DandBCompany
+      key_field: DandbCompanyId
+    OperatingHoursId:
+      table:
+      - OperatingHours
+      key_field: OperatingHoursId

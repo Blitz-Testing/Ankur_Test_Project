@@ -1,0 +1,69 @@
+extract:
+  Folder:
+    fields:
+    - Name
+    - DeveloperName
+    - AccessType
+    - IsReadonly
+    - Type
+    - ParentId
+  Document:
+    fields:
+    - Name
+    - DeveloperName
+    - ContentType
+    - Type
+    - IsPublic
+    - Body
+    - Url
+    - Description
+    - Keywords
+    - IsInternalUseOnly
+    - FolderId
+    - AuthorId
+  Account:
+    fields:
+    - Name
+    - Type
+    - BillingStreet
+    - BillingCity
+    - BillingState
+    - BillingPostalCode
+    - BillingCountry
+    - BillingLatitude
+    - BillingLongitude
+    - BillingGeocodeAccuracy
+    - ShippingStreet
+    - ShippingCity
+    - ShippingState
+    - ShippingPostalCode
+    - ShippingCountry
+    - ShippingLatitude
+    - ShippingLongitude
+    - ShippingGeocodeAccuracy
+    - Phone
+    - Fax
+    - AccountNumber
+    - Website
+    - Sic
+    - Industry
+    - AnnualRevenue
+    - NumberOfEmployees
+    - Ownership
+    - TickerSymbol
+    - Description
+    - Rating
+    - Site
+    - Jigsaw
+    - CleanStatus
+    - AccountSource
+    - DunsNumber
+    - Tradestyle
+    - NaicsCode
+    - NaicsDesc
+    - YearStarted
+    - SicDesc
+    - test__c
+    - ParentId
+    - DandbCompanyId
+    - OperatingHoursId
