@@ -1,0 +1,28 @@
+minimum_cumulusci_version: '3.88.0'
+project:
+    name: Ankur_Test_Project
+    package:
+        name: Ankur_Test_Project
+        api_version: '60.0'
+    git:
+        default_branch: 'main'
+        prefix_feature: 'feature/'
+        prefix_beta: 'beta/'
+        prefix_release: 'release/'
+    source_format: sfdx
+
+tasks:
+    robot:
+        options:
+            suites: robot/Ankur_Test_Project/tests
+            options:
+                outputdir: robot/Ankur_Test_Project/results
+
+    robot_testdoc:
+        options:
+            path: robot/Ankur_Test_Project/tests
+            output: robot/Ankur_Test_Project/doc/Ankur_Test_Project_tests.html
+
+    run_tests:
+        options:
+            required_org_code_coverage_percent: 75
